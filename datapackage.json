@@ -1,0 +1,71 @@
+{
+  "name": "co2-fossil-by-nation",
+  "title": "CO2 Emissions from Fossil Fuels since 1751, By Nation",
+  "sources": [
+    {
+      "name": "CDIAC",
+      "web": "http://cdiac.esd.ornl.gov/ftp/ndp030/CSV-FILES/nation.1751_2011.csv"
+    }
+  ],
+  "license": "ODC-PDDL",
+  "resources": [
+    {
+      "name": "fossil-fuel-co2-emissions-by-nation",
+      "path": "data/fossil-fuel-co2-emissions-by-nation.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "description": "Year",
+            "type": "date"
+          },
+          {
+            "name": "Country",
+            "description": "Nation",
+            "type": "string"
+          },
+          {
+            "name": "Total",
+            "description": "Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)",
+            "type": "number"
+          },
+          {
+            "name": "Solid Fuel",
+            "description": "Carbon emissions from solid fuel consumption",
+            "type": "number"
+          },
+          {
+            "name": "Liquid Fuel",
+            "description": "Carbon emissions from liquid fuel consumption",
+            "type": "number"
+          },
+          {
+            "name": "Gas Fuel",
+            "description": "Carbon emissions from gas fuel consumption",
+            "type": "number"
+          },
+          {
+            "name": "Cement",
+            "description": "Carbon emissions from cement production",
+            "type": "number"
+          },
+          {
+            "name": "Gas Flaring",
+            "description": "Carbon emissions from gas flaring",
+            "type": "number"
+          },
+          {
+            "name": "Per Capita",
+            "description": "Per capita carbon emissions (metric tons of carbon; after 1949 only)",
+            "type": "number"
+          }
+          {
+            "name": "Bunker fuels",
+            "description": "Carbon emissions from brunker fuels (not included in total)",
+            "type": "number"
+          },
+        ]
+      }
+    }
+  ]  
+}
