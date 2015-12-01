@@ -58,7 +58,7 @@
             "name": "Per Capita",
             "description": "Per capita carbon emissions (metric tons of carbon; after 1949 only)",
             "type": "number"
-          }
+          },
           {
             "name": "Bunker fuels",
             "description": "Carbon emissions from brunker fuels (not included in total)",
