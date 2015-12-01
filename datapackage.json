@@ -63,7 +63,7 @@
             "name": "Bunker fuels",
             "description": "Carbon emissions from brunker fuels (not included in total)",
             "type": "number"
-          },
+          }
         ]
       }
     }
