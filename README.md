@@ -5,8 +5,10 @@ Data comes from the [Carbon Dioxide Information Analysis Center (CDIAC)][cdiac].
 original csv: http://cdiac.ornl.gov/ftp/ndp030/CSV-FILES/nation.1751_2014.csv
 
 ## Preparation
-The data was prepared by the datahub.io project.
-You could also find this datapackage (including the processing script) on the github:  
+The data was prepared by the datahub.io project. You could find it here:  
+https://datahub.io/core/co2-fossil-by-nation  
+
+On the github (including the processing script):   
 https://github.com/datasets/co2-emissions
 
 [cdiac]: http://cdiac.esd.ornl.gov/
