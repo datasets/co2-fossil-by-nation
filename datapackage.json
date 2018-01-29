@@ -17,7 +17,7 @@
           {
             "name": "Year",
             "description": "Year",
-            "type": "date"
+            "type": "year"
           },
           {
             "name": "Country",
@@ -60,7 +60,7 @@
             "type": "number"
           },
           {
-            "name": "Bunker fuels",
+            "name": "Bunker fuels (Not in Total)",
             "description": "Carbon emissions from bunker fuels (not included in total)",
             "type": "number"
           }

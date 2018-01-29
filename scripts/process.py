@@ -16,8 +16,15 @@ with open(in_path) as f:
 header = ['Year', 'Country', 'Total', 'Solid Fuel', 'Liquid Fuel',
           'Gas Fuel', 'Cement', 'Gas Flaring', 'Per Capita', 'Bunker fuels (Not in Total)']
 records = records[4:]
-for i in records:
-    i[0], i[1] = i[1], i[0]
+for row in records:
+    row[0], row[1] = row[1], row[0]
+    # some values have just a dot '.' instead of number
+    # I think '.' means no data.
+    # fixing it to pass the datahub validator
+    for i in range(2, len(header)):
+        if row[i] == '.':
+            row[i] = 0
+
 records = sorted(records, key=itemgetter(0))
 
 # save data
