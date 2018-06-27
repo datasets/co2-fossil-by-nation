@@ -241,6 +241,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "carbon-emission-by-china",
+      "title": "Carbon emission by China (Mainland)",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "type": "filter",
+              "expression": "data['Country'] == 'CHINA (MAINLAND)'"
+            }
+          ]
+        }
+      ],
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "Year",
+        "series": ["Total"],
+        "yTitle": "million metric tons of C"
+      }
+    },
+    {
+      "name": "carbon-emission-by-usa",
+      "title": "Carbon emission by USA",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "type": "filter",
+              "expression": "data['Country'] == 'UNITED STATES OF AMERICA'"
+            }
+          ]
+        }
+      ],
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "Year",
+        "series": ["Total"],
+        "yTitle": "million metric tons of C"
+      }
     }
   ]
 }
