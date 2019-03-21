@@ -78,7 +78,7 @@
   "views": [
     {
       "name": "carbon-emissions-2014",
-      "title": "Countries by carbon emission in 2014 (with >50,000). Values are million metric tons of C.",
+      "title": "Countries by carbon emission in 2014 (with >50,000). Values are million kg of C.",
       "resources": [
         {
           "name": "fossil-fuel-co2-emissions-by-nation",
@@ -96,7 +96,7 @@
       ],
       "specType": "vega",
       "spec": {
-        "title": "Countries by carbon emission in 2014 (with >50,000). Values are million metric tons of C.",
+        "title": "Countries by carbon emission in 2014 (with >50,000). Values are million kg of C.",
         "$schema": "https://vega.github.io/schema/vega/v4.json",
         "width": 700,
         "height": 550,
@@ -288,7 +288,7 @@
     },
     {
       "name": "carbon-emission-per-capita-2014",
-      "title": "Carbon emission per capita in 2014 (>2.0). Values are million metric tons of C.",
+      "title": "Carbon emission per capita in 2014 (>2.0). Values are kg of C.",
       "resources": [
         {
           "name": "fossil-fuel-co2-emissions-by-nation",
@@ -306,7 +306,7 @@
       ],
       "specType": "vega",
       "spec": {
-        "title": "Carbon emission per capita in 2014 (>2.0). Values are million metric tons of C.",
+        "title": "Carbon emission per capita in 2014 (>2.0). Values are kg of C.",
         "$schema": "https://vega.github.io/schema/vega/v4.json",
         "width": 700,
         "height": 700,
