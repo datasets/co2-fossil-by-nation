@@ -1,11 +1,11 @@
 {
   "name": "co2-fossil-by-nation",
-  "title": "CO2 Emissions from Fossil Fuels since 1751, By Nation",
+  "title": "National CO2 emissions from fossil fuels and cement manufacture",
   "sources": [
     {
-      "name": "CDIAC",
-      "path": "http://cdiac.esd.ornl.gov/ftp/ndp030/CSV-FILES/nation.1751_2011.csv",
-      "title": "CO2 Emissions from Fossil Fuels since 1751, By Nation"
+      "name": "CDIAC at AppState",
+      "path": "https://rieee.appstate.edu/wp-content/uploads/2024/07/nation.1751_2020.xlsx",
+      "title": "National CO2 emissions from fossil fuels and cement manufacture"
     }
   ],
   "licenses": [
