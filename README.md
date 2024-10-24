@@ -1,3 +1,5 @@
+<a href="https://datahub.io/core/co2-fossil-by-nation"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+
 Per Country CO2 Emissions from fossil-fuels annually since 1751 till 2020.
 
 ## Data
