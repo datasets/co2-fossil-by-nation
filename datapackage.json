@@ -15,7 +15,66 @@
       "title": "Open Data Commons Public Domain Dedication and License v1.0"
     }
   ],
+  "views": [
+    {
+      "name": "top-emitters",
+      "title": "CO₂ Emissions: Top 10 Countries (1950–2020)",
+      "description": "Fossil fuel and cement CO₂ emissions for the ten highest cumulative emitters since 1950. The US led through the 20th century; China overtook it around 2005 and now emits roughly twice as much annually. USSR figures end in 1991 and are continued by Russia.",
+      "resources": ["top-emitters"],
+      "specType": "plot",
+      "spec": {
+        "height": 460,
+        "marginLeft": 65,
+        "marginRight": 20,
+        "x": { "label": "Year", "tickFormat": ".0f" },
+        "y": { "label": "CO₂ Emissions (Mt)", "grid": true },
+        "color": { "legend": true },
+        "marks": [
+          {
+            "type": "ruleX",
+            "staticData": [{ "x": 1997 }],
+            "x": "x", "stroke": "#9ca3af", "strokeDasharray": "4,4", "tip": false
+          },
+          {
+            "type": "ruleX",
+            "staticData": [{ "x": 2015 }],
+            "x": "x", "stroke": "#9ca3af", "strokeDasharray": "4,4", "tip": false
+          },
+          {
+            "type": "text",
+            "staticData": [{ "x": 1997, "y": 3200, "label": "Kyoto Protocol" }],
+            "x": "x", "y": "y", "text": "label",
+            "fill": "#6b7280", "fontSize": 11, "textAnchor": "start", "dx": 6
+          },
+          {
+            "type": "text",
+            "staticData": [{ "x": 2015, "y": 3200, "label": "Paris Agreement" }],
+            "x": "x", "y": "y", "text": "label",
+            "fill": "#6b7280", "fontSize": 11, "textAnchor": "start", "dx": 6
+          },
+          {
+            "type": "line",
+            "x": "year", "y": "total_mt", "stroke": "country",
+            "strokeWidth": 2, "tip": true
+          }
+        ]
+      }
+    }
+  ],
   "resources": [
+    {
+      "name": "top-emitters",
+      "path": "data/top-emitters.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          { "name": "country", "type": "string" },
+          { "name": "year", "type": "integer" },
+          { "name": "total_mt", "type": "number", "description": "CO₂ emissions in megatonnes" }
+        ]
+      }
+    },
     {
       "name": "fossil-fuel-co2-emissions-by-nation",
       "path": "data/fossil-fuel-co2-emissions-by-nation.csv",
