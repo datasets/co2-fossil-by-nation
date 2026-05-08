@@ -13,7 +13,12 @@ The data was prepared by the datahub.io project. You could find it here:
 https://datahub.io/core/co2-fossil-by-nation 
 
 On the github (including the processing script):   
-https://github.com/datasets/co2-emissions
+https://github.com/datasets/co2-fossil-by-nation
+
+## Data quirks
+
+- **Per Capita**: values are only available from 1950 onwards; earlier rows contain null.
+- **Gas Flaring**: null for many countries where flaring measurements are unavailable.
 
 [cdiac]: https://rieee.appstate.edu/projects-programs/cdiac/
 
