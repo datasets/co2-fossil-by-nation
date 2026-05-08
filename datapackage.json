@@ -1,6 +1,7 @@
 {
   "name": "co2-fossil-by-nation",
   "title": "National CO2 emissions from fossil fuels and cement manufacture",
+  "description": "Annual CO2 emissions from fossil fuel combustion and cement manufacture for over 200 nations from 1751 to 2020, broken down by fuel type (solid, liquid, gas), cement, gas flaring, and per-capita figures. Data sourced from the Carbon Dioxide Information Analysis Center (CDIAC) at Appalachian State University.",
   "sources": [
     {
       "name": "CDIAC at AppState",
@@ -65,12 +66,13 @@
     {
       "name": "top-emitters",
       "path": "data/top-emitters.csv",
+      "description": "CO₂ emissions (fossil fuel and cement) for the ten highest cumulative emitters since 1950, with annual totals in megatonnes. Derived from the main fossil-fuel-co2-emissions-by-nation dataset.",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
-          { "name": "country", "type": "string" },
-          { "name": "year", "type": "integer" },
+          { "name": "country", "type": "string", "description": "Name of the country" },
+          { "name": "year", "type": "integer", "description": "Calendar year of observation" },
           { "name": "total_mt", "type": "number", "description": "CO₂ emissions in megatonnes" }
         ]
       }
@@ -78,6 +80,7 @@
     {
       "name": "fossil-fuel-co2-emissions-by-nation",
       "path": "data/fossil-fuel-co2-emissions-by-nation.csv",
+      "description": "Annual CO2 emissions from fossil fuel combustion and cement manufacture for over 200 nations, 1751–2020. Values are in thousand metric tons of carbon. Per-capita figures are only available from 1950 onwards. Gas Flaring values are null for many countries where flaring data is unavailable.",
       "schema": {
         "fields": [
           {
@@ -117,7 +120,7 @@
           },
           {
             "name": "Gas Flaring",
-            "description": "Carbon emissions from gas flaring",
+            "description": "Carbon emissions from gas flaring; null for many countries where flaring data is unavailable",
             "type": "number"
           },
           {
