@@ -72,7 +72,7 @@
       "schema": {
         "fields": [
           { "name": "country", "type": "string", "description": "Name of the country" },
-          { "name": "year", "type": "integer", "description": "Calendar year of observation" },
+          { "name": "year", "type": "year", "description": "Calendar year of observation" },
           { "name": "total_mt", "type": "number", "description": "CO₂ emissions in megatonnes" }
         ]
       }
@@ -96,32 +96,32 @@
           {
             "name": "Total",
             "description": "Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Solid Fuel",
             "description": "Carbon emissions from solid fuel consumption",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Liquid Fuel",
             "description": "Carbon emissions from liquid fuel consumption",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Gas Fuel",
             "description": "Carbon emissions from gas fuel consumption",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Cement",
             "description": "Carbon emissions from cement production",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Gas Flaring",
             "description": "Carbon emissions from gas flaring; null for many countries where flaring data is unavailable",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "Per Capita",
@@ -131,7 +131,7 @@
           {
             "name": "Bunker fuels (Not in Total)",
             "description": "Carbon emissions from bunker fuels (not included in total)",
-            "type": "number"
+            "type": "integer"
           }
         ]
       }
